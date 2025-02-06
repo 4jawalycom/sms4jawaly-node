@@ -1,6 +1,6 @@
 {
   "name": "sms4jawaly-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js/JavaScript SDK for 4jawaly SMS Gateway",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
