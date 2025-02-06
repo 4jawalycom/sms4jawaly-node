@@ -40,10 +40,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4jawaly/sms4jawaly-sms.git"
+    "url": "git+https://github.com/4jawalycom/sms4jawaly-sms.git"
   },
   "bugs": {
-    "url": "https://github.com/4jawaly/sms4jawaly-sms/issues"
+    "url": "https://github.com/4jawalycom/sms4jawaly-sms/issues"
   },
-  "homepage": "https://github.com/4jawaly/sms4jawaly-sms#readme"
+  "homepage": "https://github.com/4jawalycom/sms4jawaly-sms#readme"
 }
