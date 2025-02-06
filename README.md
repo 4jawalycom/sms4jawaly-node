@@ -1,6 +1,6 @@
-# SMS4Jawaly SMS SDK for JavaScript/TypeScript
+# SMS4Jawaly Node.js SDK
 
-مكتبة JavaScript/TypeScript لإرسال الرسائل النصية القصيرة عبر بوابة 4jawaly للرسائل
+مكتبة Node.js/JavaScript لإرسال الرسائل النصية القصيرة عبر بوابة 4jawaly للرسائل
 
 ## المتطلبات
 
@@ -10,9 +10,9 @@
 ## التثبيت
 
 ```bash
-npm install sms4jawaly-sms
+npm install sms4jawaly-node
 # أو باستخدام yarn
-yarn add sms4jawaly-sms
+yarn add sms4jawaly-node
 ```
 
 ## الاستخدام
@@ -20,7 +20,7 @@ yarn add sms4jawaly-sms
 ### JavaScript
 
 ```javascript
-const { SMS4JawalyClient } = require('sms4jawaly-sms');
+const { SMS4JawalyClient } = require('sms4jawaly-node');
 
 const client = new SMS4JawalyClient(
     'your_api_key',
@@ -72,7 +72,7 @@ client.getBalance(1) // 1 للباقات النشطة فقط
 ### TypeScript
 
 ```typescript
-import { SMS4JawalyClient } from 'sms4jawaly-sms';
+import { SMS4JawalyClient } from 'sms4jawaly-node';
 
 const client = new SMS4JawalyClient(
     'your_api_key',

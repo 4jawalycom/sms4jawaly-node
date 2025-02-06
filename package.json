@@ -1,7 +1,7 @@
 {
-  "name": "sms4jawaly-sms",
+  "name": "sms4jawaly-node",
   "version": "1.0.2",
-  "description": "JavaScript SDK for 4jawaly SMS Gateway",
+  "description": "Node.js/JavaScript SDK for 4jawaly SMS Gateway",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -15,7 +15,10 @@
     "sms",
     "messaging",
     "4jawaly",
-    "gateway"
+    "gateway",
+    "nodejs",
+    "javascript",
+    "typescript"
   ],
   "author": "4jawaly",
   "license": "MIT",
@@ -40,10 +43,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4jawalycom/sms4jawaly-sms.git"
+    "url": "git+https://github.com/4jawalycom/sms4jawaly-node.git"
   },
   "bugs": {
-    "url": "https://github.com/4jawalycom/sms4jawaly-sms/issues"
+    "url": "https://github.com/4jawalycom/sms4jawaly-node/issues"
   },
-  "homepage": "https://github.com/4jawalycom/sms4jawaly-sms#readme"
+  "homepage": "https://github.com/4jawalycom/sms4jawaly-node#readme"
 }
