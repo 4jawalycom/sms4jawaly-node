@@ -1,6 +1,6 @@
 {
   "name": "sms4jawaly-node",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Node.js/JavaScript SDK for 4jawaly SMS Gateway",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,9 @@
   "author": "4jawaly",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/jest": "^27.0.0",

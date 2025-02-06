@@ -16,8 +16,6 @@ build/
 *.swo
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Testing
@@ -28,3 +26,4 @@ coverage/
 .DS_Store
 *.log
 .npmrc
+config.bat
