@@ -145,7 +145,58 @@ client.sendSMS(numbers, 'Message groupé de 4jawaly!')
     });
 ```
 
-## 📚 API Documentation / التوثيق / Documentation
+<div dir="rtl">
+
+## 🇵🇰 اردو
+
+4jawaly SMS گیٹ وے کے ذریعے SMS پیغامات بھیجنے کے لیے Node.js/JavaScript لائبریری
+
+### ضروریات
+
+- Node.js 12 یا اس سے نئی ورژن
+- npm یا yarn
+
+### انسٹالیشن
+
+```bash
+npm install sms4jawaly-node
+# یا yarn کے ساتھ
+yarn add sms4jawaly-node
+```
+
+### استعمال
+
+#### JavaScript
+
+```javascript
+const { SMS4JawalyClient } = require('sms4jawaly-node');
+
+const client = new SMS4JawalyClient(
+    'your_api_key',
+    'your_api_secret',
+    'YOUR_SENDER_NAME'
+);
+
+// ایک نمبر پر پیغام بھیجیں
+client.sendSingleSMS('966500000000', '4jawaly سے سلام!')
+    .then(response => {
+        console.log('پیغام کامیابی سے بھیج دیا گیا!');
+    })
+    .catch(error => {
+        console.error('ایک خرابی پیش آگئی:', error);
+    });
+
+// متعدد نمبروں پر پیغام بھیجیں
+const numbers = ['966500000000', '966500000001'];
+client.sendSMS(numbers, '4jawaly سے اجتماعی پیغام!')
+    .then(response => {
+        console.log(`بھیجے گئے: ${response.total_success}`);
+    });
+```
+
+</div>
+
+## 📚 API Documentation / التوثيق / Documentation / دستاویزات
 
 ### SMS4JawalyClient
 
@@ -153,13 +204,13 @@ client.sendSMS(numbers, 'Message groupé de 4jawaly!')
 class SMS4JawalyClient {
     constructor(apiKey: string, apiSecret: string, sender: string);
     
-    // Send to single number / إرسال لرقم واحد / Envoyer à un seul numéro
+    // Send to single number / إرسال لرقم واحد / Envoyer à un seul numéro / ایک نمبر پر بھیجیں
     sendSingleSMS(number: string, message: string): Promise<SMSResponse>;
     
-    // Send to multiple numbers / إرسال لعدة أرقام / Envoyer à plusieurs numéros
+    // Send to multiple numbers / إرسال لعدة أرقام / Envoyer à plusieurs numéros / متعدد نمبروں پر بھیجیں
     sendSMS(numbers: string[], message: string): Promise<SMSResponse>;
     
-    // Check balance / فحص الرصيد / Vérifier le solde
+    // Check balance / فحص الرصيد / Vérifier le solde / بیلنس چیک کریں
     getBalance(isActive?: number): Promise<BalanceResponse>;
 }
 
@@ -177,6 +228,6 @@ interface BalanceResponse {
 }
 ```
 
-## 📝 License / الترخيص / Licence
+## 📝 License / الترخيص / Licence / لائسنس
 
-MIT License / رخصة MIT / Licence MIT
+MIT License / رخصة MIT / Licence MIT / MIT لائسنس
